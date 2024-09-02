@@ -1,4 +1,5 @@
 import Form from "../components/Form";
+import SubmissionSuccess from "../components/SubmissionSuccess";
 
 const Waitlist = () => {
     return(

@@ -1,0 +1,4 @@
+* Add Memojis
+* Adjust design
+* Implement valid inputs
+* Implement animation(scroll animation)

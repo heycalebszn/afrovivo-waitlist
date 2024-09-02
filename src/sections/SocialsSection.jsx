@@ -3,7 +3,7 @@ import { Twitter, Linkedin } from "lucide-react";
 
 const SocialsSection = () => {
     return (
-        <div className="flex gap-10 mt-[100px] justify-center items-center">
+        <div className="flex gap-10 mt-[150px] justify-center items-center">
             <SocialCard 
             icon={<Twitter />}
             title={"Twitter"}
