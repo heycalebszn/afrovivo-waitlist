@@ -6,11 +6,7 @@ import SubmissionSuccess from "./SubmissionSuccess"
 
 const Form = () => {
     const [state, handleSubmit] = useForm("xzzpwpwv");
-        if (state.succeeded) {
-            return (
-                <SubmissionSuccess />
-            );
-        }
+
     return (
     <div className="flex flex-col">
     <form class="max-w-sm mx-auto mt-[50px] w-[300px]" onSubmit={handleSubmit} action="https://formspree.io/f/xzzpwpwv" method="POST">
@@ -38,10 +34,16 @@ const Form = () => {
         </div>
     </div>
 
-    <div className="flex items-center justify-end text-center mt-[10px] py-[5px] px-[10px] rounded-md shadow-xl bg-green-900 cursor-pointer text-gray-400 hover:text-white transition duration-150" disabled={state.submitting}>
-        <button type="submit" className="text-[12px] font-md mx-auto">Join the waitlist</button>
+    <div className="flex items-center justify-end text-center mt-[10px] py-[5px] px-[10px] rounded-md shadow-xl bg-slate-900 cursor-pointer text-gray-400 hover:text-white transition duration-150" disabled={state.submitting}>
+        <button type="submit" className={`text-[12px] font-md mx-auto ${state.submitting ? (
+            <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"></svg>
+        ) : ""}`}>Join the waitlist</button>
     <ArrowRight className="w-[15px] font-md" />
     </div>
+
+    ${state.succeeded ? (
+        <SubmissionSuccess />
+    ) : "hidden"}
 </form>
 
 <SocialsSection />
