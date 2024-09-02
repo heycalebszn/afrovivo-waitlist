@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Figtree", sans-serif;
+}
+
+body{
+  height: 90vh;
+  background: linear-gradient(to bottom, rgb(24, 23, 23), black 15%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
