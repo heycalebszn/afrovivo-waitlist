@@ -39,10 +39,10 @@ const Form = () => {
         </div>
     </div>
 
-    <div className="flex items-center justify-end text-center mt-[10px] py-[5px] px-[10px] rounded-md shadow-xl bg-slate-900 cursor-pointer text-gray-400 hover:text-white transition duration-150" disabled={state.submitting} type="submit">
+    <a className="flex items-center justify-end text-center mt-[10px] py-[5px] px-[10px] rounded-md shadow-xl bg-slate-900 cursor-pointer text-gray-400 hover:text-white transition duration-150" disabled={state.submitting} type="submit">
         <button className={`text-[12px] font-md mx-auto`}>Join the waitlist</button>
     <ArrowRight className="w-[15px] font-md" />
-    </div>
+    </a>
 </form>
 
 <SocialsSection />
