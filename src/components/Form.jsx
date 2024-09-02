@@ -1,11 +1,16 @@
 import { User, ArrowRight, Mail } from "lucide-react";
 import SocialsSection from "../sections/SocialsSection";
 import { useForm, ValidationError } from '@formspree/react';
-import SubmissionSuccess from "./SubmissionSuccess"
-
+import SubmissionSuccess from "./SubmissionSuccess";
 
 const Form = () => {
     const [state, handleSubmit] = useForm("xzzpwpwv");
+    if(state.succeeded){
+        return(
+            <SubmissionSuccess />,
+            <SocialsSection />
+        )
+    } 
 
     return (
     <div className="flex flex-col">
@@ -40,10 +45,6 @@ const Form = () => {
         ) : ""}`}>Join the waitlist</button>
     <ArrowRight className="w-[15px] font-md" />
     </div>
-
-    ${state.succeeded ? (
-        <SubmissionSuccess />
-    ) : "hidden"}
 </form>
 
 <SocialsSection />
