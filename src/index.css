@@ -12,7 +12,7 @@
 
 body{
   height: 90vh;
-  background: linear-gradient(to bottom, rgb(14, 13, 13), black 15%);
+  background: linear-gradient(to bottom, rgb(8, 8, 8), black 10%);
   background-repeat: no-repeat;
   background-size: cover;
 }
