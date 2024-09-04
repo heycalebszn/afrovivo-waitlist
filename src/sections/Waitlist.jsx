@@ -18,7 +18,7 @@ const Waitlist = () => {
             <Form />
 
             <img src={Mark1}
-            className="absolute sm:top-[80px] md:left-[260px] sm:w-[150px] w-[100px] top-[70px] left-[5px] z-0"
+            className="absolute sm:top-[80px] md:left-[250px] sm:w-[150px] w-[100px] top-[70px] left-[5px] z-0"
              alt="Mark" />
         </section>
     )
