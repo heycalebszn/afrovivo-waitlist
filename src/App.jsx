@@ -3,7 +3,7 @@ import Waitlist from "./sections/Waitlist";
 const App = () => {
   return(
     <div>
-      <Waitlist />
+        <Waitlist />
     </div>
   )
 }
