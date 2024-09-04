@@ -1,3 +1,0 @@
-* Implement valid inputs
-* Implement animation(scroll animation)
- 
