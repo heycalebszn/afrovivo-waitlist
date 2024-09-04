@@ -2,7 +2,7 @@ import { User, ArrowRight, Mail } from "lucide-react";
 import SocialsSection from "../sections/SocialsSection";
 import SocialSection from "../sections/SocialSection";
 import { useForm, ValidationError } from '@formspree/react';
-import SubmissionSuccess from "./SubmissionSuccess";
+import { useState, useCallback, UseMemo, useEffect } from "react";
 
 const Form = () => {
     const [state, handleSubmit] = useForm("xzzpwpwv");
@@ -40,7 +40,7 @@ const Form = () => {
     </div>
 
     <a className="flex items-center justify-end text-center mt-[10px] py-[5px] px-[10px] rounded-md shadow-xl bg-slate-900 cursor-pointer text-gray-400 hover:text-white transition duration-300" disabled={state.submitting} type="submit">
-        <button className={`text-[12px] font-md mx-auto`}>Join the waitlist</button>
+        <button className={`text-[12px] font-md mx-auto ${state.submitting ? "text-[50px]" : "flex"}`}>Join the waitlist</button>
     <ArrowRight className="w-[15px] font-md" />
     </a>
 </form>
