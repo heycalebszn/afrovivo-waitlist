@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { User, Mail, ArrowRight, LoaderCircle, Twitter, Linkedin, ArrowLeft } from 'lucide-react';
 import { useForm, ValidationError } from '@formspree/react';
+import { Mark1, Ivana1 } from "../assets"
 
 const Waitlist = () => {
   // Placeholder images (since we don't have access to the actual imports)
-  const placeholderImg1 = "/api/placeholder/60/60"; // For Ivana1
-  const placeholderImg2 = "/api/placeholder/150/150"; // For Mark1
+  const placeholderImg1 = Ivana1; // For Ivana1
+  const placeholderImg2 = Mark1; // For Mark1
   
   const [state, handleSubmit] = useForm("xzzpwpwv");
   const [hoverSocial, setHoverSocial] = useState(null);
